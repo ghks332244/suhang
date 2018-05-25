@@ -10,7 +10,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import javax.swing.JTable;
 
-import parkYoungHawn.FileManager.MainForm;
+import parkYoungHawn.FileManager.Main;
 
 //오른쪽 마우스를 누르면 드는 메뉴 창을 만든 클래스
 @SuppressWarnings("serial")
@@ -24,7 +24,7 @@ class RightMenu extends JPopupMenu {
     private JTable table;
     
     //menu를 만듬
-    RightMenu(MainForm form, JTable table, ResourceBundle bundle) {
+    RightMenu(Main form, JTable table, ResourceBundle bundle) {
         this.table = table;
 
         add(showInFolder);
